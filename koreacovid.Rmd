@@ -81,8 +81,12 @@ Very few people actually died , 1.4% of Korean females died however 3% of Korean
 
 ## Inferential results 
 
-
-
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+fisher.test(table2)
+```
+The p value 0.001 is to low thus we reject the Null hypothesis. The death rate on Korea is dependent on sex.
 
 
 
