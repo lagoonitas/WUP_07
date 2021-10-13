@@ -58,7 +58,7 @@ basicCC + geom_bar(stat="identity", position = "dodge")
  
  
   Among those who died in Korea from Covid, most of them were Men. Woman died at almost half the rate as men dead in Korea from Covid. The right bar graph(red) shows woman died at a levels of 36% of the infected,and it shows that that the men(blue) died at levels of 64% of those infected.
-`
+
 
   
 
@@ -69,8 +69,19 @@ basicCC + geom_bar(stat="identity", position = "dodge")
   
 ## Numerical results
 
+```{r}
+table2 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table2)
+colPerc(table2)
+```
+Men died at almost twice the rate as woman did from Covid-19 in Korea. 36% of the dead count was females and 64% of the death count was men.
+
+Very few people actually died of Covid-19 , only 1.4% of Korean females died and only 3% of Korean men died in Korea from Covid-19.
+
 
 ## Inferential results 
+
+
 
 
 
