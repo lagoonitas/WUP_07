@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
 author: "Abel Jacobo Perez"
-date: "5/2/2020"
+date: "10/12/2021"
 output:
   html_document: default
   pdf_document: default
@@ -86,9 +86,12 @@ chisq.test(table2)
 chisqtestGC(table2)
 fisher.test(table2)
 ```
-The p value 0.001 is to low thus we reject the Null hypothesis. The death rate on Korea is dependent on sex.
+ The pearson chi-squared test shows that The p value 0.001 is to low thus we reject the Null hypothesis. The death rate on Korea is dependent on sex.
+
+The fisher exact test shows that men died at 2.3 times the rate that woman died.
 
 
 
 ## Conclusions
 
+We reject the Null Hypothesis because the P value is so low, men died at the 2.3 times the rate that woman dead.We conclude that the death rate of South Korean's were dependent on sex.Men died at a higher rate.
